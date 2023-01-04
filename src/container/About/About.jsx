@@ -6,6 +6,7 @@ import { urlFor, client } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
 
 
+
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -31,7 +32,7 @@ const About = () => {
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10, textAlign: 'justify' }}>{about.description}</p>
+            <p className="p-text text" style={{ marginTop: 10, textAlign: 'justify', hyphens: 'auto' }}>{about.description}</p>
           </motion.div>
         ))}
       </div>

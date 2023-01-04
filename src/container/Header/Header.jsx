@@ -75,7 +75,7 @@ const Header = () => (
       whileInView={scaleVariants.variants}
       className="app__header-circles"
     >
-      {[images.git].map((circle, index) => (
+      {[images.react].map((circle, index) => (
         <div className="circle-cmp app__flex floating" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
@@ -85,7 +85,7 @@ const Header = () => (
           <img src={circle} alt="profile_bg" />
         </div>
       ))}
-      {[images.sass].map((circle, index) => (
+      {[images.git].map((circle, index) => (
         <div className="circle-cmp app__flex floating" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
