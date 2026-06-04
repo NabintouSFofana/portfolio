@@ -1,0 +1,1175 @@
+<!doctype html>
+<!--
+  Portfolio · Nabintou S. Fofana · 2024–2026
+  Built by hand. MIT-licensed code, content all rights reserved.
+  https://github.com/NabintouSFofana/portfolio
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nabintou S. Fofana" />
+    <meta name="copyright" content="© 2024–2026 Nabintou S. Fofana" />
+    <meta
+      name="description"
+      content="Selected works by Nabintou S. Fofana — a software engineering student building web, Java, and Python projects from the ground up."
+    />
+    <meta name="theme-color" content="#F2ECE0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nabintou S. Fofana · Selected Works" />
+    <meta
+      property="og:description"
+      content="Eight projects showing what I've built, what I've learned, and how I think."
+    />
+    <meta property="og:image" content="images/photo-me.PNG" />
+    <title>Nabintou S. Fofana · Selected Works</title>
+    <link rel="icon" type="image/png" href="images/photo-me.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Set .js on <html> before paint so the cursor:none rule only fires
+         when JS will replace it. No-JS users keep their native cursor. -->
+    <script>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <!-- ─────────── TOP BAR ─────────── -->
+    <header class="topbar">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">N°</span>
+        <span class="brand-name">Nabintou&nbsp;S.&nbsp;Fofana</span>
+      </a>
+
+      <div class="now-widget" role="status" aria-live="polite" id="nowWidget">
+        <span class="now-dot" aria-hidden="true"></span>
+        <span class="now-text" id="nowText">Open to internships &amp; junior roles</span>
+        <span class="now-time" id="nowTime"></span>
+      </div>
+
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html">Index</a>
+        <a href="projects.html" aria-current="page">Work</a>
+        <a href="Nabintou_Fofana_resume.pdf" target="_blank" rel="noopener noreferrer"
+          >Résumé&nbsp;↗</a
+        >
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke-linejoin="round"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.42-1.42" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ─────────── WORKS HERO ─────────── -->
+      <section class="works-hero">
+        <div class="hero-meta">
+          <span class="eyebrow mono">Selected Works · 2024 — 2026</span>
+          <span class="mono works-count">10&nbsp;entries</span>
+        </div>
+
+        <h1 class="works-title" data-reveal>
+          <span class="line">Things</span>
+          <span class="line"><em>I've</em> built &amp;</span>
+          <span class="line accent">what they taught me.</span>
+        </h1>
+
+        <p class="works-intro" data-reveal>
+          A running catalogue of side projects, coursework, and things I
+          built because I wanted to. Most of them started with a small
+          question — "could I make this?" — and ended up teaching me more
+          than I expected. Each entry has two short paragraphs:
+          <em>what I built</em>, and <em>what I learned</em>.
+        </p>
+      </section>
+
+      <!-- ─────────── INDEX / TOC ─────────── -->
+      <section class="works-index">
+        <header class="section-header">
+          <span class="section-num mono">§ 01</span>
+          <h2>Index</h2>
+          <span class="mono toc-legend">jump&nbsp;to&nbsp;↓</span>
+        </header>
+
+        <ol class="toc" role="list">
+          <li>
+            <a href="#p01">
+              <span class="toc-num mono">01</span>
+              <span class="toc-name"
+                >Schicgirl<span class="tm">™</span> · Natural Hair Tools</span
+              >
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Founder · 6 live products</span>
+              <span class="toc-year mono">'24 — '26</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p02">
+              <span class="toc-num mono">02</span>
+              <span class="toc-name">Math Adventure</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Spring Boot · REST · Team</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p03">
+              <span class="toc-num mono">03</span>
+              <span class="toc-name">Journal de Nabie</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Mini CMS · Admin · FR</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p04">
+              <span class="toc-num mono">04</span>
+              <span class="toc-name">Caesar Cipher</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Java · Web demo · Viz</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p05">
+              <span class="toc-num mono">05</span>
+              <span class="toc-name">Personal Finance Tracker</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Java · Swing · FlatLaf</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#p06">
+              <span class="toc-num mono"> 06 </span>
+
+              <span class="toc-name"> InsightFlow </span>
+
+              <span class="toc-dots" aria-hidden="true"> </span>
+
+              <span class="toc-tag mono">
+                Python · Flask · Analytics · Dashboard
+              </span>
+
+              <span class="toc-year mono"> 2026 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#p07">
+              <span class="toc-num mono">07</span>
+              <span class="toc-name">JobBoard</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Vanilla JS · Editorial</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p08">
+              <span class="toc-num mono">08</span>
+              <span class="toc-name">Portfolio Website</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">HTML · CSS · JS</span>
+              <span class="toc-year mono">2026</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p09">
+              <span class="toc-num mono">09</span>
+              <span class="toc-name">SimpleTask</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Vanilla JS · Per-user</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p10">
+              <span class="toc-num mono">10</span>
+              <span class="toc-name">Weather App</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">JS · API · 24h forecast</span>
+              <span class="toc-year mono">2025</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ─────────── PROJECTS ─────────── -->
+      <section class="works">
+        <header class="section-header">
+          <span class="section-num mono">§ 02</span>
+          <h2>The work</h2>
+        </header>
+
+        <!-- 01 — Schicgirl™ -->
+        <article class="project featured" id="p01" data-reveal>
+          <span class="project-bignum" aria-hidden="true">01</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Founder Project</span>
+              <span class="mono">·</span>
+              <span class="mono">2024 — Present</span>
+              <span class="featured-badge mono">
+                <span class="featured-dot" aria-hidden="true"></span>
+                Founder · live brand
+              </span>
+            </div>
+            <h3 class="project-title">
+              Schicgirl<span class="tm">™</span>
+              <span class="leaf" aria-hidden="true">🌿</span>
+            </h3>
+            <p class="project-subtitle">
+              A natural hair brand I founded, designed, and built — now a
+              six-product ecosystem serving Type&nbsp;4 hair customers in
+              French and English.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>Founder · sole developer</li>
+              <li>Trademarked brand</li>
+              <li>6 live products</li>
+              <li>Anthropic Claude API</li>
+              <li>Bilingual · FR / EN</li>
+              <li>Admin dashboards</li>
+              <li>Amazon affiliate</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> Schicgirl<span class="tm">™</span>
+                started as a natural-hair blog and grew into a brand I run
+                end-to-end — designer, developer, content writer, customer
+                support. Bilingual site, small storefront, admin dashboards
+                I built for myself. The brand work is mine too: name,
+                trademark, palette, voice.
+              </p>
+
+              <p class="label mono shipped-label">Shipped products —</p>
+              <ul class="shipped-products" role="list">
+                <li>
+                  <span class="shipped-name">CoilCare AI<span class="tm">™</span></span>
+                  <span class="shipped-desc">Conversational hair assistant on the Anthropic Claude API.</span>
+                </li>
+                <li>
+                  <span class="shipped-name">HydraCheck</span>
+                  <span class="shipped-desc">Interactive hair hydration diagnostic with its own admin.</span>
+                </li>
+                <li>
+                  <span class="shipped-name">SchicChat</span>
+                  <span class="shipped-desc">Bilingual hair diagnostic chatbot.</span>
+                </li>
+                <li>
+                  <span class="shipped-name">Consultation booking</span>
+                  <span class="shipped-desc">Bilingual booking flow + admin dashboard.</span>
+                </li>
+                <li>
+                  <span class="shipped-name">Link-in-bio</span>
+                  <span class="shipped-desc">Custom link-in-bio with a content editor so I never touch code.</span>
+                </li>
+                <li>
+                  <span class="shipped-name">Amazon affiliate minisite</span>
+                  <span class="shipped-desc">Curated product page driving affiliate revenue.</span>
+                </li>
+              </ul>
+
+              <p>
+                <span class="label mono">Learned —</span> Almost everything
+                I know about shipping software end-to-end, I learned here.
+                Two languages, a real LLM API, admin tooling I actually use,
+                support emails when things break. Designing for a community
+                works better when you're in it.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://nabintousfofana.github.io/schicgirl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >View the tech&nbsp;↗</a
+              >
+              <a
+                href="https://github.com/NabintouSFofana/schicgirl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View repo</a
+              >
+              <a
+                href="https://link.schicgirl.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Live brand site&nbsp;↗</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-l">
+            <div class="photo-frame">
+              <img
+                src="images/schicgirl.png"
+                alt="Schicgirl™ storefront — bilingual natural hair tools shop"
+              />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 02 — Math Adventure -->
+        <article class="project" id="p02" data-reveal>
+          <span class="project-bignum" aria-hidden="true">02</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 02</span>
+              <span class="mono">·</span>
+              <span class="mono">2025 — 2026</span>
+              <span class="featured-badge team-badge mono">
+                <span class="featured-dot" aria-hidden="true"></span>
+                Team of 6 · v2 refactor solo
+              </span>
+            </div>
+            <h3 class="project-title">
+              Math Adventure <span class="leaf" aria-hidden="true">🧮</span>
+            </h3>
+            <p class="project-subtitle">
+              A class-built math practice site for K–5 students — and a
+              solo rebuild that gave it a new design and a cleaner backend.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>HTML · CSS · JS</li>
+              <li>Java Spring Boot</li>
+              <li>REST API</li>
+              <li>JUnit · MockMvc</li>
+              <li>Full-stack</li>
+              <li>Team of 6 → solo v2</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> A K–5 math practice
+                site for our Software Engineering course. Six of us, one
+                semester. Spring Boot back-end, vanilla JS front-end, all
+                served from one process.
+              </p>
+              <p>
+                <span class="label mono">Refactor —</span> I came back solo
+                and rebuilt the spine. Static controllers became Spring
+                services with DI; plain-string responses became JSON DTOs
+                with real HTTP codes; a 635-line front-end file became eight
+                ES modules; the test suite grew from 30 to 50 cases. New
+                look too — italic display type, chunky shadows, an animated
+                fox coach.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> Working with five
+                other people taught me more than the code did — merge
+                conflicts, code review, picking up someone else's
+                half-finished feature. The solo rebuild taught me a
+                different thing: code is much easier to change when each
+                piece does one job.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/yeabtsegaASC22/Math_Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >View repo&nbsp;↗</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-r">
+            <div class="photo-frame">
+              <img
+                src="images/math-adventure.png"
+                alt="Math Adventure v2 — practice screen with the comic-book trainer design, big italic question, color-blocked answer cards, and a fox coach with a speech bubble"
+              />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 03 — Journal de Nabie -->
+        <article class="project" id="p03" data-reveal>
+          <span class="project-bignum" aria-hidden="true">03</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 03</span>
+              <span class="mono">·</span>
+              <span class="mono">2025</span>
+              <span class="lang-chip mono" aria-label="French language project"
+                >FR</span
+              >
+            </div>
+            <h3 class="project-title">
+              Journal de Nabie <span class="leaf" aria-hidden="true">🌸</span>
+            </h3>
+            <p class="project-subtitle">
+              A soft, French-language blog for Muslim women — with its own
+              built-in admin. A handmade mini-WordPress.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vanilla JS</li>
+              <li>Mini CMS</li>
+              <li>Admin dashboard</li>
+              <li>Responsive</li>
+              <li>Editorial design</li>
+              <li>Privacy-first</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> A personal blog in
+                French for Muslim women juggling faith, studies, work, and
+                inner healing. Hero, featured articles, four categories
+                (<em>Foi · Lifestyle · Carrière &amp; Tech · Santé mentale</em>),
+                newsletter signup, and a hidden admin where I write, edit,
+                and publish from the browser — no redeploy.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> Building even a
+                tiny CMS makes you appreciate why WordPress exists. Login,
+                edit, save, publish — every piece I take for granted, I
+                had to write. Playfair Display with Poppins gave it the
+                magazine warmth I'd been after.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://nabintousfofana.github.io/Mon-journal/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >Visit live&nbsp;↗</a
+              >
+              <a
+                href="https://github.com/NabintouSFofana/Mon-journal"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View repo</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-l">
+            <div class="photo-frame">
+              <img
+                src="images/mon-journal.png"
+                alt="Journal de Nabie — homepage with featured articles and warm editorial layout"
+              />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+    <!-- 04 — Caesar Cipher -->
+<article class="project" id="p04" data-reveal>
+
+<span class="project-bignum" aria-hidden="true">
+04
+</span>
+
+<div class="project-text-col">
+
+<div class="project-meta">
+
+<span class="mono">
+Project 04
+</span>
+
+<span class="mono">
+·
+</span>
+
+<span class="mono">
+2026
+</span>
+
+</div>
+
+<h3 class="project-title">
+
+Caesar Cipher
+
+<span class="leaf" aria-hidden="true">
+
+🔐
+
+</span>
+
+</h3>
+
+<p class="project-subtitle">
+
+The classic shift cipher, visualized — write a message, drag the shift slider, watch the alphabet wheel rotate, and see all 26 possible decryptions at once.
+
+</p>
+
+<ul class="project-tags" role="list">
+
+<li>Java</li>
+
+<li>JavaScript</li>
+
+<li>HTML</li>
+
+<li>CSS</li>
+
+<li>Algorithms</li>
+
+<li>Cryptography</li>
+
+<li>SVG</li>
+
+<li>Interactive UI</li>
+
+</ul>
+
+<div class="project-body">
+
+<p>
+
+<span class="label mono">
+
+Built —
+
+</span>
+
+Started as a Java implementation for class — algorithm, edge cases, tests — and grew into a web demo with an interactive alphabet wheel that rotates as you drag the shift. The newest piece is a <em>cipher breaker</em> that shows all 26 decryptions at once. Caesar is easy to crack; seeing all 26 lined up makes that obvious.
+
+</p>
+
+<p>
+
+<span class="label mono">
+
+Learned —
+
+</span>
+
+Two things. Writing the same algorithm in Java and then JavaScript made me notice how differently they think about strings. And the SVG wheel was harder than the cipher — five lines of math, an afternoon of SVG. Worth it: the wheel is what people remember.
+
+</p>
+
+</div>
+
+<div class="project-links">
+
+<a
+href="https://nabintousfofana.github.io/caesarcipher_project/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn primary"
+>
+
+Launch Lab&nbsp;↗
+
+</a>
+
+<a
+href="https://github.com/NabintouSFofana/caesarcipher_project"
+target="_blank"
+rel="noopener noreferrer"
+class="btn"
+>
+
+View repo
+
+</a>
+
+</div>
+
+</div>
+
+<figure class="project-photo tilt-r">
+
+<div class="photo-frame">
+
+<img
+src="images/caesar-cipher.png"
+alt="Caesar Cipher web demo — interactive alphabet wheel and message field"
+/>
+
+<span
+class="photo-tape"
+aria-hidden="true">
+</span>
+
+</div>
+
+</figure>
+
+</article>
+
+        <!-- 05 — Personal Finance Tracker -->
+        <article class="project" id="p05" data-reveal>
+          <span class="project-bignum" aria-hidden="true">05</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 05</span>
+              <span class="mono">·</span>
+              <span class="mono">2025</span>
+            </div>
+            <h3 class="project-title">
+              Personal Finance Tracker
+              <span class="leaf" aria-hidden="true">💸</span>
+            </h3>
+            <p class="project-subtitle">
+              A Java Swing app that takes its UI seriously — modern flat
+              theming, stats sidebar, and a quiet warning when an expense looks
+              unusual.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>Java</li>
+              <li>Swing</li>
+              <li>FlatLaf</li>
+              <li>OOP</li>
+              <li>Desktop</li>
+              <li>Editorial palette</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> A Java desktop app
+                for tracking income, expenses, and a monthly savings goal.
+                <a
+                  href="https://www.formdev.com/flatlaf/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >FlatLaf</a
+                >
+                gave it a modern look in the same cream-and-rust palette as
+                this portfolio. Sidebar with balance, income, expenses, a
+                progress bar, and a small safety net: if a single expense
+                tops 30% of total income, the app pauses to confirm.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> Keeping logic out
+                of the UI. My first version had the stats math inside the
+                methods that drew the labels — worked, but couldn't be
+                reused. I moved it into the <code>Account</code> class and
+                wrote a CLI version that shared the same logic. That "it
+                just works in two places" moment is what made it stick.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/NabintouSFofana/Personal-Finance-Tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >View repo&nbsp;↗</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-l">
+            <div class="photo-frame">
+              <img
+                src="images/personal-finance-tracker.png"
+                alt="Personal Finance Tracker GUI"
+              />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 06 — InsightFlow -->
+        <article class="project" id="p06" data-reveal>
+          <span class="project-bignum" aria-hidden="true"> 06 </span>
+
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono"> Project 06 </span>
+
+              <span class="mono"> · </span>
+
+              <span class="mono"> 2026 </span>
+            </div>
+
+            <h3 class="project-title">
+              InsightFlow
+
+              <span class="leaf" aria-hidden="true"> 📊 </span>
+            </h3>
+
+            <p class="project-subtitle">
+              A small data tool — Flask web app for instant CSV dashboards,
+              plus a Python CLI for one-page PDF reports. Two interfaces,
+              same cleaning and insights core.
+            </p>
+
+            <ul class="project-tags" role="list">
+              <li>Python</li>
+
+              <li>Flask</li>
+
+              <li>Pandas</li>
+
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Matplotlib</li>
+
+              <li>FPDF</li>
+
+              <li>Data Analytics</li>
+
+              <li>Dashboard</li>
+            </ul>
+
+            <div class="project-body">
+              <p>
+                <span class="label mono"> Built — </span>
+
+                A small data tool with two faces. The
+                <strong>Flask web app</strong> takes a CSV upload and
+                returns a dashboard with metric cards, anomaly flags,
+                and a cleaned preview. The <strong>Python CLI</strong>
+                produces a one-page PDF you'd actually email to someone.
+                Both share the same cleaning and insights modules.
+              </p>
+
+              <p>
+                <span class="label mono"> Learned — </span>
+
+                Writing the CLI was the fun part. Making it useful was
+                harder. v1 dumped a wall of numbers, v2 tried to
+                "summarize" but said nothing real. v3 picks a few specific
+                things worth pointing out and leaves the rest in the data.
+                Small distinction, changed how the whole tool feels.
+                Splitting the code into shared modules also taught me a
+                lot — the CLI and the web app pull from the same
+                <code>cleaner.py</code> and <code>insights.py</code>.
+              </p>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://insightflow-t50k.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+              >
+                Launch live&nbsp;↗
+              </a>
+              <a
+                href="https://github.com/NabintouSFofana/InsightFlow/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+              >
+                View repo
+              </a>
+            </div>
+          </div>
+
+          <figure class="project-photo tilt-r">
+            <div class="photo-frame">
+              <img
+                src="images/InsightFlow.png"
+                alt="InsightFlow dashboard preview"
+              />
+
+              <span class="photo-tape" aria-hidden="true"> </span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 07 — JobBoard -->
+        <article class="project" id="p07" data-reveal>
+          <span class="project-bignum" aria-hidden="true">07</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 07</span>
+              <span class="mono">·</span>
+              <span class="mono">2025</span>
+            </div>
+            <h3 class="project-title">
+              JobBoard <span class="leaf" aria-hidden="true">💼</span>
+            </h3>
+            <p class="project-subtitle">
+              A small, fast job listing that reads like newspaper classifieds —
+              not SaaS cards on a coloured gradient.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vanilla JS</li>
+              <li>localStorage</li>
+              <li>Editorial design</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> A two-page job
+                board: listings with search, dynamic location/type
+                filters, save button per row; bookmarks page with a live
+                counter in the nav. Numbered classifieds rows instead of
+                SaaS cards — you can scan twenty listings without
+                scrolling. While building, I caught a quiet bug: one job
+                <code>id</code> appeared twice in the JSON, which flagged
+                <em>both</em> copies when you saved one. Fixed.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> Tech was
+                straightforward — <code>fetch</code>,
+                <code>localStorage</code>, debounced search. The surprise
+                was layout. Cards-on-grid felt cluttered at twenty
+                listings. Switching to newspaper-style numbered rows let
+                me show three times more on one screen. Some design
+                problems already have an answer; you just have to stop
+                reaching for the default.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://NabintouSFofana.github.io/JobBoard"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >Visit live&nbsp;↗</a
+              >
+              <a
+                href="https://github.com/NabintouSFofana/JobBoard"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View repo</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-l">
+            <div class="photo-frame">
+              <img src="images/jobBoard.png" alt="JobBoard listing screen" />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 08 — Portfolio -->
+        <article class="project" id="p08" data-reveal>
+          <span class="project-bignum" aria-hidden="true">08</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 08</span>
+              <span class="mono">·</span>
+              <span class="mono">2026</span>
+            </div>
+            <h3 class="project-title">
+              Portfolio Website <span class="leaf" aria-hidden="true">🌐</span>
+            </h3>
+            <p class="project-subtitle">
+              The site you're on. A small love letter to typography.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Accessibility</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> The site you're
+                looking at. Hand-written HTML, CSS, and a small amount of
+                JavaScript — no template, no framework. Editorial print
+                feel: cream paper, rust accents, Fraunces headlines, a
+                soft cursor on pointer devices. Light + dark modes,
+                scroll-spy side nav, work-row thumbnail peek.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> A portfolio is
+                weirdly hard because <em>you're</em> the brief. I rewrote
+                the copy three times before it stopped sounding like a
+                resume. And progressive enhancement: turn off JavaScript,
+                the site still works. Wasn't true the first time.
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="index.html" class="btn primary">Visit live&nbsp;↗</a>
+              <a
+                href="https://github.com/NabintouSFofana/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View repo</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-r">
+            <div class="photo-frame">
+              <img src="images/portfolio.png" alt="Portfolio homepage screenshot" />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 09 — SimpleTask -->
+        <article class="project" id="p09" data-reveal>
+          <span class="project-bignum" aria-hidden="true">09</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 09</span>
+              <span class="mono">·</span>
+              <span class="mono">2025</span>
+            </div>
+            <h3 class="project-title">
+              SimpleTask <span class="leaf" aria-hidden="true">✅</span>
+            </h3>
+            <p class="project-subtitle">
+              A small to-do app that remembers what you <em>did</em> — not just
+              what's left to do.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vanilla JS</li>
+              <li>localStorage</li>
+              <li>Per-user storage</li>
+              <li>Dark mode</li>
+              <li>UX-led</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> A to-do app I built
+                because I wanted to use it. Add tasks, check them off — but
+                instead of deleting the finished ones, the app slides them
+                into a small dated history with a "🎯 1 task completed
+                today" counter. Some days I needed proof I'd done
+                something. Dark mode, lowercased email as the storage key
+                so two people can share a browser. No backend.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> The code was
+                ordinary — DOM, events, <code>localStorage</code>. The
+                interesting part was watching how a tiny design choice —
+                keeping finished tasks visible — changed how it felt to
+                use. I'm glad I built the stripped-down version first.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://nabintousfofana.github.io/simple-task-tracker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >Visit live&nbsp;↗</a
+              >
+              <a
+                href="https://github.com/NabintouSFofana/simple-task-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View repo</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-l">
+            <div class="photo-frame">
+              <img
+                src="images/task tracker.png"
+                alt="SimpleTask — task list, daily completed counter, and dated history below"
+              />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 10 — Weather App -->
+        <article class="project" id="p10" data-reveal>
+          <span class="project-bignum" aria-hidden="true">10</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 10</span>
+              <span class="mono">·</span>
+              <span class="mono">2025</span>
+            </div>
+            <h3 class="project-title">
+              Weather App <span class="leaf" aria-hidden="true">☀️</span>
+            </h3>
+            <p class="project-subtitle">
+              A weather app with a big italic temperature, a 24-hour forecast
+              strip, and a security lesson I learned the hard way.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>Vanilla JS</li>
+              <li>OpenWeather API</li>
+              <li>Geolocation</li>
+              <li>BYO API key</li>
+              <li>Custom SVG icons</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> A modern weather
+                app: city search, geolocation, °C/°F toggle (computed
+                locally), six-stat grid, 24-hour forecast strip pulled via
+                <code>Promise.all</code>. Custom SVG icons for every
+                OpenWeather code with day/night variants. Uses a
+                <em>bring-your-own-key</em> pattern — your OpenWeather key
+                lives only in your <code>localStorage</code>, never on my
+                server.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> Technically:
+                <code>fetch</code>, <code>Promise.all</code>,
+                <code>navigator.geolocation</code>, three real error
+                states instead of one generic "something went wrong." The
+                bigger lesson came from v1, though:
+                <em>I committed my OpenWeather API key to a public GitHub
+                repo.</em> Anyone could have used it. I revoked it
+                immediately and rebuilt around BYO-key. Slightly more
+                friction for the user, but I can't make the mistake twice.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://nabintousfofana.github.io/Weather-App/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >Visit live&nbsp;↗</a
+              >
+              <a
+                href="https://github.com/NabintouSFofana/Weather-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >View repo</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo tilt-r">
+            <div class="photo-frame">
+              <img src="images/weather.png" alt="Weather App interface" />
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+      </section>
+
+      <!-- ─────────── OUTRO / CTA ─────────── -->
+      <section class="works-outro">
+        <p class="outro-lead">That's the catalogue — for now.</p>
+        <p class="outro-blurb">
+          I'm always working on the next one. If you'd like to talk shop, mentor
+          a junior, or hire one, I'd love to hear from you.
+        </p>
+        <a href="mailto:nabintousfofana@gmail.com" class="btn primary big">
+          Say hello&nbsp;↗
+        </a>
+      </section>
+    </main>
+
+    <!-- ─────────── FOOTER ─────────── -->
+    <footer class="site-footer">
+      <div class="footer-row">
+        <span class="mono">© 2026 — Nabintou S. Fofana</span>
+        <span class="mono"
+          >Designed &amp; built by hand · <a href="#top">Back to top ↑</a></span
+        >
+      </div>
+      <div class="signature" aria-hidden="true">N · S · F</div>
+    </footer>
+
+    <script>
+      // Theme: read stored preference BEFORE paint
+      (function bootTheme() {
+        try {
+          const stored = localStorage.getItem('theme');
+          if (stored === 'light' || stored === 'dark') {
+            document.documentElement.setAttribute('data-theme', stored);
+          }
+        } catch (e) {}
+      })();
+
+      const themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const current =
+            document.documentElement.getAttribute('data-theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          const next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      }
+
+      // Now-widget (same logic as index.html)
+      function tickNow() {
+        const widget = document.getElementById('nowWidget');
+        const text   = document.getElementById('nowText');
+        const time   = document.getElementById('nowTime');
+        const dot    = widget && widget.querySelector('.now-dot');
+        if (!widget || !text || !time) return;
+        const now = new Date();
+        const ctHour = parseInt(
+          new Intl.DateTimeFormat('en-US', { hour: '2-digit', hour12: false, timeZone: 'America/Chicago' })
+            .format(now), 10);
+        const ctMin = parseInt(
+          new Intl.DateTimeFormat('en-US', { minute: '2-digit', timeZone: 'America/Chicago' })
+            .format(now), 10);
+        time.textContent = `${String(ctHour).padStart(2, '0')}:${String(ctMin).padStart(2, '0')} CT`;
+        const isAround = ctHour >= 8 && ctHour < 22;
+        if (isAround) {
+          text.textContent = 'Open to internships — usually around';
+          if (dot) dot.classList.remove('is-quiet');
+        } else {
+          text.textContent = 'Open to internships — asleep, back tomorrow';
+          if (dot) dot.classList.add('is-quiet');
+        }
+      }
+      tickNow();
+      setInterval(tickNow, 60 * 1000);
+
+      // Scroll reveals
+      const reveals = document.querySelectorAll("[data-reveal]");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+      );
+      reveals.forEach((el, i) => {
+        el.style.setProperty("--reveal-i", i % 6);
+        io.observe(el);
+      });
+
+      // Soft custom cursor
+      const cursor = document.querySelector(".cursor");
+      const isFine = window.matchMedia("(pointer: fine)").matches;
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (isFine && cursor && !prefersReducedMotion) {
+        let x = window.innerWidth / 2, y = window.innerHeight / 2;
+        let tx = x, ty = y;
+        window.addEventListener("mousemove", (e) => { tx = e.clientX; ty = e.clientY; }, { passive: true });
+        const loop = () => {
+          x += (tx - x) * 0.18;
+          y += (ty - y) * 0.18;
+          cursor.style.transform = `translate(${x}px, ${y}px)`;
+          requestAnimationFrame(loop);
+        };
+        loop();
+        const hoverables = document.querySelectorAll("a, button, .project, .toc li");
+        hoverables.forEach((el) => {
+          el.addEventListener("mouseenter", () => cursor.classList.add("is-hover"));
+          el.addEventListener("mouseleave", () => cursor.classList.remove("is-hover"));
+        });
+      } else if (cursor) {
+        cursor.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

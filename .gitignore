@@ -1,0 +1,47 @@
+# ─── OS junk ──────────────────────────────────────────────────────────
+# macOS adds these everywhere
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows adds these
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─── Editor / IDE files ──────────────────────────────────────────────
+# VS Code, JetBrains, Sublime, etc. — your editor settings shouldn't
+# travel to other people's machines via the repo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ─── Logs and temp ───────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.cache
+
+# ─── Local-only files ────────────────────────────────────────────────
+# If you ever experiment with a draft page or a scratch file,
+# name it with a leading underscore and it won't get pushed
+_draft*
+_scratch*
+_local*
+
+# ─── If you ever add a build step (you currently don't) ──────────────
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.env
+.env.local
