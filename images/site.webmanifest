@@ -1,0 +1,11 @@
+{
+  "name": "Nabintou Fofana",
+  "short_name": "NF",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#a0381a",
+  "background_color": "#ebe3d6",
+  "display": "standalone"
+}
