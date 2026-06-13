@@ -6,7 +6,8 @@ frameworks, no build step.
 
 A Software Engineering student at UT Dallas (graduating Spring 2027),
 building and shipping real products — including [Schicgirl™](https://schicgirl.me),
-a bilingual natural-hair brand I founded and engineer end-to-end.
+a bilingual natural-hair brand whose product suite I develop and maintain
+end-to-end as the full-stack engineer.
 
 ## What's in here
 
@@ -26,9 +27,10 @@ portfolio/
 The full write-ups live on [`projects.html`](https://nabintousfofana.github.io/portfolio/projects.html);
 the home page surfaces a selected few.
 
-1. **Schicgirl™** — a bilingual (FR/EN) natural-hair brand I founded; a
-   six-product ecosystem with admin dashboards, an Amazon affiliate page,
-   and an AI hair assistant. Founder and sole developer.
+1. **Schicgirl™** — a bilingual (FR/EN) natural-hair brand I develop as the
+   full-stack engineer; a dozen-plus live pages with admin dashboards, a
+   storefront, diagnostic tools, and an AI hair assistant on the Anthropic
+   Claude API.
 2. **Math Adventure** — a team Spring Boot project I returned to and rebuilt
    solo: Spring services with DI, JSON DTOs, a front end split into ES modules.
 3. **Journal de Nabie** — a browser mini-CMS with a hidden admin panel
