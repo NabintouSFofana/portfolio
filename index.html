@@ -15,9 +15,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Nabintou S. Fofana · Software Engineer in the making" />
   <meta property="og:description" content="A software engineering student passionate about real-world problem solving and user-first design." />
-  <meta property="og:image" content="images/photo-me.PNG" />
+  <meta property="og:image" content="images/photo-me.png" />
   <title>Nabintou S. Fofana · Software Engineer in the making</title>
-  <link rel="icon" type="image/png" href="images/photo-me.PNG" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -94,14 +99,17 @@
 
       <figure class="hero-photo" data-reveal>
         <div class="photo-frame">
-          <img src="images/photo-me.PNG" alt="Portrait of Nabintou Fofana" />
+          <picture>
+            <source srcset="images/photo-me.webp" type="image/webp" />
+            <img src="images/photo-me.png" alt="Portrait of Nabintou Fofana" width="700" height="561" fetchpriority="high" />
+          </picture>
           <span class="photo-tape" aria-hidden="true"></span>
         </div>
         <figcaption><span class="mono">Fig. 01 —</span> shipping curiosity, on most days.</figcaption>
       </figure>
 
       <p class="hero-bio" data-reveal>
-        I'm a Software Engineering student at <strong>UT Dallas</strong> (graduating Spring 2027), and I've been running a small natural hair brand, Schicgirl<span class="tm">™</span>, since 2024 — it's where I taught myself to ship software end-to-end. Most of what I build starts as something I wanted to use myself: an AI hair assistant on the Anthropic API, a math practice app, a CSV-to-PDF analyzer. I'm looking for a <strong>Summer 2026 internship</strong> or <strong>part-time / remote role right now</strong> where I can keep building and learn from people who've been doing this longer than I have.
+        I'm a Software Engineering student at <strong>UT Dallas</strong> (graduating Spring 2027), and since 2024 I've been the <strong>full-stack developer</strong> behind Schicgirl<span class="tm">™</span>, a bilingual natural-hair brand — it's where I taught myself to ship software end-to-end. Most of what I build starts as something I wanted to use myself: an AI assistant on the Anthropic API, a math practice app, a CSV-to-PDF analyzer. I'm looking for a <strong>Summer 2026 internship</strong> or <strong>part-time / remote role right now</strong> where I can keep building and learn from people who've been doing this longer than I have.
       </p>
 
       <div class="hero-cta" data-reveal>
@@ -135,7 +143,7 @@
       <div class="currently-grid">
         <article class="card" data-reveal>
           <span class="card-label mono">Building</span>
-          <p>Internal admin dashboards for Schicgirl<span class="tm">™</span>, plus exploring how LLM APIs change small tools. Currently wiring Supabase into a personal blog.</p>
+          <p>Internal admin dashboards and customer tools for Schicgirl<span class="tm">™</span>, plus exploring how LLM APIs change small tools. Currently wiring Supabase into a personal blog.</p>
         </article>
         <article class="card" data-reveal>
           <span class="card-label mono">Learning</span>
@@ -165,9 +173,9 @@
           <a href="projects.html#p01">
             <span class="work-num mono">01</span>
             <span class="work-name">Schicgirl<span class="tm">™</span> — Natural Hair Brand</span>
-            <span class="work-tag mono">Founder · 6 products · FR/EN</span>
+            <span class="work-tag mono">Full-stack dev · 12+ pages · FR/EN</span>
             <span class="work-year mono">2024 — present</span>
-            <span class="work-peek" aria-hidden="true"><img src="images/schicgirl.png" alt="" loading="lazy" /></span>
+            <span class="work-peek" aria-hidden="true"><picture><source srcset="images/schicgirl.webp" type="image/webp" /><img src="images/schicgirl.png" alt="" loading="lazy" /></picture></span>
             <span class="work-arrow" aria-hidden="true">→</span>
           </a>
         </li>
@@ -177,7 +185,7 @@
             <span class="work-name">Math Adventure</span>
             <span class="work-tag mono">Spring · v2 refactor · Editorial</span>
             <span class="work-year mono">2025 — 2026</span>
-            <span class="work-peek" aria-hidden="true"><img src="images/math-adventure.png" alt="" loading="lazy" /></span>
+            <span class="work-peek" aria-hidden="true"><picture><source srcset="images/math-adventure.webp" type="image/webp" /><img src="images/math-adventure.png" alt="" loading="lazy" /></picture></span>
             <span class="work-arrow" aria-hidden="true">→</span>
           </a>
         </li>
@@ -187,7 +195,7 @@
             <span class="work-name">Journal de Nabie</span>
             <span class="work-tag mono">Mini CMS · Admin · FR</span>
             <span class="work-year mono">2025</span>
-            <span class="work-peek" aria-hidden="true"><img src="images/mon-journal.png" alt="" loading="lazy" /></span>
+            <span class="work-peek" aria-hidden="true"><picture><source srcset="images/mon-journal.webp" type="image/webp" /><img src="images/mon-journal.png" alt="" loading="lazy" /></picture></span>
             <span class="work-arrow" aria-hidden="true">→</span>
           </a>
         </li>
@@ -246,7 +254,7 @@
 
         <div class="ip-foot">
           <a
-            href="https://nabintousfofana.github.io/schicgirl/index_CoilCareAI.html"
+            href="https://schicgirl.me/CoilCareAI"
             target="_blank"
             rel="noopener noreferrer"
             class="btn primary"
@@ -254,7 +262,7 @@
             View the demo (BYOK)&nbsp;↗
           </a>
           <a
-            href="https://github.com/NabintouSFofana/schicgirl/blob/main/index_CoilCareAI.html"
+            href="https://github.com/NabintouSFofana/schicgirl/blob/main/CoilCareAI.html"
             target="_blank"
             rel="noopener noreferrer"
             class="btn"
@@ -608,8 +616,8 @@
       let tx = x, ty = y;
       window.addEventListener('mousemove', (e) => { tx = e.clientX; ty = e.clientY; }, { passive: true });
       const loop = () => {
-        x += (tx - x) * 0.18;
-        y += (ty - y) * 0.18;
+        x += (tx - x) * 0.6;
+        y += (ty - y) * 0.6;
         cursor.style.transform = `translate(${x}px, ${y}px)`;
         requestAnimationFrame(loop);
       };
