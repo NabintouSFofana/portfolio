@@ -28,9 +28,10 @@ The full write-ups live on [`projects.html`](https://nabintousfofana.github.io/p
 the home page surfaces a selected few.
 
 1. **Schicgirl™** — a bilingual (FR/EN) natural-hair brand I develop as the
-   full-stack engineer; a dozen-plus live pages with admin dashboards, a
-   storefront, diagnostic tools, and an AI hair assistant on the Anthropic
-   Claude API.
+   full-stack engineer; 80+ live URLs covering a storefront, diagnostic tools,
+   and The Circle — a paid membership on Supabase with auth, row-level
+   security across 11 tables, a subscription-gated private forum, and a
+   113-lesson studio.
 2. **Math Adventure** — a team Spring Boot project I returned to and rebuilt
    solo: Spring services with DI, JSON DTOs, a front end split into ES modules.
 3. **Journal de Nabie** — a browser mini-CMS with a hidden admin panel

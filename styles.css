@@ -442,6 +442,29 @@ main { padding: 0 var(--gutter); }
   .currently-grid { grid-template-columns: 1fr; }
 }
 
+/* ─── SKILLS ─── */
+.skills {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.skills-grid .card { display: flex; flex-direction: column; }
+.skill-tags {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+
 /* ─── WORK LIST ─── */
 .work {
   max-width: var(--max);
@@ -1014,6 +1037,9 @@ main { padding: 0 var(--gutter); }
   scroll-margin-top: 100px;
 }
 .project:last-child { border-bottom: 1px solid var(--rule); }
+/* entries with no screenshot yet — text spans full width instead of a half-empty grid */
+.project.no-photo { grid-template-columns: 1fr; }
+.project.no-photo .project-text-col { max-width: 760px; }
 
 /* alternate: even projects flip photo + text */
 .project:nth-child(even) .project-text-col { order: 2; }
@@ -1308,6 +1334,20 @@ main { padding: 0 var(--gutter); }
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   margin-left: 0.1rem;
+}
+
+
+/* ============================================================
+   EVENT PLANNING — project-management badge variant
+   ============================================================ */
+.featured-badge.pm-badge {
+  --badge-tint: #3A4A5C;          /* slate blue */
+  color: var(--badge-tint);
+  background: color-mix(in oklab, var(--badge-tint) 10%, var(--paper));
+  border-color: color-mix(in oklab, var(--badge-tint) 25%, transparent);
+}
+.featured-badge.pm-badge .featured-dot {
+  background: var(--badge-tint);
 }
 
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
   Portfolio · Nabintou S. Fofana · 2024–2026
-  Built by hand. MIT-licensed code, content all rights reserved.
+  MIT-licensed code, content all rights reserved.
   https://github.com/NabintouSFofana/portfolio
 -->
 <html lang="en">
@@ -19,7 +19,7 @@
     <meta property="og:title" content="Nabintou S. Fofana · Selected Works" />
     <meta
       property="og:description"
-      content="Eight projects showing what I've built, what I've learned, and how I think."
+      content="Twelve projects showing what I've built, what I've learned, and how I think."
     />
     <meta property="og:image" content="images/photo-me.png" />
     <title>Nabintou S. Fofana · Selected Works</title>
@@ -81,7 +81,7 @@
       <section class="works-hero">
         <div class="hero-meta">
           <span class="eyebrow mono">Selected Works · 2024 — 2026</span>
-          <span class="mono works-count">10&nbsp;entries</span>
+          <span class="mono works-count">12&nbsp;entries</span>
         </div>
 
         <h1 class="works-title" data-reveal>
@@ -115,7 +115,7 @@
                 >Schicgirl<span class="tm">™</span> · Natural Hair Tools</span
               >
               <span class="toc-dots" aria-hidden="true"></span>
-              <span class="toc-tag mono">Full-stack dev · 12+ live pages</span>
+              <span class="toc-tag mono">Full-stack dev · Supabase · 80+ URLs</span>
               <span class="toc-year mono">'24 — '26</span>
             </a>
           </li>
@@ -207,6 +207,24 @@
               <span class="toc-year mono">2025</span>
             </a>
           </li>
+          <li>
+            <a href="#p11">
+              <span class="toc-num mono">11</span>
+              <span class="toc-name">TerraScape</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Unity · C# · L-system</span>
+              <span class="toc-year mono">2026</span>
+            </a>
+          </li>
+          <li>
+            <a href="#p12">
+              <span class="toc-num mono">12</span>
+              <span class="toc-name">Event Planning &amp; Vendor Marketplace</span>
+              <span class="toc-dots" aria-hidden="true"></span>
+              <span class="toc-tag mono">Project Management</span>
+              <span class="toc-year mono">2026</span>
+            </a>
+          </li>
         </ol>
       </section>
 
@@ -222,12 +240,12 @@
           <span class="project-bignum" aria-hidden="true">01</span>
           <div class="project-text-col">
             <div class="project-meta">
-              <span class="mono">Full-Stack Build</span>
+              <span class="mono">Freelance Developer</span>
               <span class="mono">·</span>
               <span class="mono">2024 — Present</span>
               <span class="featured-badge mono">
                 <span class="featured-dot" aria-hidden="true"></span>
-                Lead developer · live brand
+                Solo build · live on GitHub Pages
               </span>
             </div>
             <h3 class="project-title">
@@ -235,72 +253,61 @@
               <span class="leaf" aria-hidden="true">🌿</span>
             </h3>
             <p class="project-subtitle">
-              The bilingual (FR/EN) natural-hair brand I build and maintain
-              end-to-end — a dozen-plus live pages for Type&nbsp;4 hair, each
-              with its own admin dashboard, from storefront to AI assistant.
+              A bilingual (FR/EN) natural-hair platform for Type&nbsp;4 hair with
+              38 source pages, 17 blog articles, 8,267-line forum, paid
+              membership backend on Supabase, and 113-lesson interactive studio.
             </p>
             <ul class="project-tags" role="list">
-              <li>Full-stack developer</li>
-              <li>12+ live pages</li>
-              <li>Anthropic Claude API</li>
-              <li>Bilingual · FR / EN</li>
-              <li>Supabase</li>
-              <li>Google Apps Script</li>
-              <li>Admin dashboards</li>
-              <li>Vanilla JS · no build step</li>
+              <li>HTML/CSS/JS</li>
+              <li>No framework, no build step</li>
+              <li>Supabase / Postgres · 11 tables · RLS</li>
+              <li>Email/password auth, paid access</li>
+              <li>Python bilingual pre-render</li>
+              <li>Vanilla JS · GitHub Pages</li>
             </ul>
             <div class="project-body">
               <p>
-                <span class="label mono">Built —</span> I'm the full-stack
-                developer behind Schicgirl<span class="tm">™</span>, a
-                bilingual natural-hair brand for Type&nbsp;4 hair. I design,
-                build, and maintain the whole product surface — the
-                link-in-bio hub, sales pages, customer tools, and the admin
-                dashboard behind nearly every one of them. It's all
-                hand-written HTML/CSS/JS with no build step, served from
-                GitHub Pages, and wired to Supabase and Google Apps Script
-                where it needs real persistence.
+                <span class="label mono">The hard problem —</span>
+                Schicgirl sits on GitHub Pages (static hosting, no server), yet
+                needs a permission check for paid members: a <code>SECURITY DEFINER</code>
+                Postgres function queries <code>profiles.access_until</code> server-side, and
+                row-level security seals all 11 tables (posts, comments, photos,
+                notifications, recipes, polls, products, threads, etc.) so each
+                member reads the forum but only writes as herself. Single account opens
+                the site, forum, and studio at once.
               </p>
 
-              <p class="label mono shipped-label">Shipped tools —</p>
-              <ul class="shipped-products" role="list">
-                <li>
-                  <span class="shipped-name">CoilCare AI<span class="tm">™</span></span>
-                  <span class="shipped-desc">Conversational Type&nbsp;4 hair assistant on the Anthropic Claude API, client-side key.</span>
-                </li>
-                <li>
-                  <span class="shipped-name">HydraCheck</span>
-                  <span class="shipped-desc">Hydration/porosity diagnostic with a full leads dashboard.</span>
-                </li>
-                <li>
-                  <span class="shipped-name">SchicChat</span>
-                  <span class="shipped-desc">Bilingual diagnostic chatbot, leads backed by Google Sheets.</span>
-                </li>
-                <li>
-                  <span class="shipped-name">Link-in-bio hub</span>
-                  <span class="shipped-desc">A conversion-ladder homepage with a visual content editor and click/visit analytics.</span>
-                </li>
-                <li>
-                  <span class="shipped-name">Booking + reviews</span>
-                  <span class="shipped-desc">Consultation flow with admin dashboard; Supabase-backed reviews that surface on the hub.</span>
-                </li>
-                <li>
-                  <span class="shipped-name">Freebie funnel</span>
-                  <span class="shipped-desc">Lead-magnet landing, subscriber dashboard, and self-hosted bilingual PDF delivery.</span>
-                </li>
-                <li>
-                  <span class="shipped-name">Sales pages &amp; affiliate site</span>
-                  <span class="shipped-desc">Six ebook pages plus a porosity-sorted Amazon mini-site with its own editor.</span>
-                </li>
-              </ul>
+              <p>
+                <span class="label mono">Session expiry caught in production —</span>
+                Supabase tokens expire after an hour without refresh.
+                Paying members who came back the next day were told they had no access.
+                Fixed with refresh-before-expiry plus a single automatic retry on 401.
+              </p>
 
               <p>
-                <span class="label mono">Learned —</span> Almost everything
-                I know about shipping software end-to-end, I learned here:
-                two languages, a real LLM API, admin tooling that gets used
-                daily, and the discipline of supporting something that's
-                live. Building for a real, active community is the fastest
-                feedback loop I've found.
+                <span class="label mono">The data corruption that slipped through code review —</span>
+                A hair-type dropdown offered <code>4A</code> while the
+                database column held <code>Type 4A</code>. Comparisons failed silently,
+                fields rendered empty, and saving an empty field wrote <code>null</code>
+                over the existing value. The dropdown in French offered a different value
+                entirely (<code>Transition</code> vs. <code>Transitioning</code>), so
+                the same person was stored differently per language. Fixed by pinning an
+                explicit value attribute and translating only the label text.
+              </p>
+
+              <p>
+                <span class="label mono">Bilingual SEO —</span>
+                Browsers run a client-side language toggle; search engines do not.
+                A Python pre-render step turns 19 source pages into 38+ static FR/EN URLs with
+                correct <code>canonical</code> and <code>hreflang</code> tags, so Google indexes
+                each language at its own address instead of the two versions competing.
+              </p>
+
+              <p>
+                <span class="label mono">Known limitation —</span>
+                The points ledger is still client-authoritative: a member could
+                edit her own total from the browser console. Points can't back store rewards
+                until that moves to Postgres — the next refactor.
               </p>
             </div>
             <div class="project-links">
@@ -312,7 +319,14 @@
                 >Visit Schicgirl&nbsp;↗</a
               >
               <a
-                href="https://github.com/NabintouSFofana/schicgirl/blob/main/index.html"
+                href="https://schicgirl.me/link-in-bio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >Link in Bio&nbsp;↗</a
+              >
+              <a
+                href="https://github.com/NabintouSFofana/schicgirl"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn"
@@ -429,8 +443,8 @@
               Journal de Nabie <span class="leaf" aria-hidden="true">🌸</span>
             </h3>
             <p class="project-subtitle">
-              A soft, French-language blog for Muslim women — with its own
-              built-in admin. A handmade mini-WordPress.
+              A soft, French-language blog for Muslim women with its own
+              built-in admin panel and content management system.
             </p>
             <ul class="project-tags" role="list">
               <li>HTML</li>
@@ -1097,6 +1111,180 @@ aria-hidden="true">
             </div>
           </figure>
         </article>
+
+        <!-- 11 — TerraScape -->
+        <article class="project" id="p11" data-reveal>
+          <span class="project-bignum" aria-hidden="true">11</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 11</span>
+              <span class="mono">·</span>
+              <span class="mono">2026</span>
+              <span class="featured-badge team-badge mono">
+                <span class="featured-dot" aria-hidden="true"></span>
+                Team of 4 · my scope below
+              </span>
+            </div>
+            <h3 class="project-title">
+              TerraScape <span class="leaf" aria-hidden="true">🌲</span>
+            </h3>
+            <p class="project-subtitle">
+              An interactive 3D terrain sandbox for my Computer Graphics
+              course — my piece uses recursive L-system turtle graphics to
+              procedurally grow fractal geometry.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Procedural Generation</li>
+              <li>Computational Geometry</li>
+              <li>Git</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> TerraScape is a
+                4-person Unity/C# project; teammates built the terrain,
+                water, and camera systems. My scope was the object
+                placement tool, a fractal L-system engine, and the team's
+                Git workflow:
+              </p>
+              <ul class="ip-list" role="list">
+                <li>
+                  <strong>Object placement —</strong> click-to-place,
+                  rotate, and delete world objects using Unity's
+                  <code>Physics.Raycast</code> for mouse picking, with
+                  runtime translate/rotate/scale manipulation.
+                </li>
+                <li>
+                  <strong>Fractal L-system engine —</strong> a grammar
+                  data class plus a recursive turtle-graphics interpreter
+                  that grows tree geometry and space-filling curves
+                  (dragon curve, Koch, Hilbert, Sierpinski) from short
+                  substitution rules, ported from the classic
+                  string-grammar algorithm into idiomatic C#.
+                </li>
+                <li>
+                  <strong>Git workflow —</strong> set up repo structure, a
+                  Unity-specific <code>.gitignore</code>, a
+                  branch-per-feature convention, and onboarding docs so
+                  three teammates with varying Git experience could
+                  contribute without clashing on the same scene file —
+                  scene files don't merge, so this was a real
+                  Unity-specific collaboration problem.
+                </li>
+                <li>
+                  Wrote the team's final technical report and coordinated
+                  delivery.
+                </li>
+              </ul>
+              <p>
+                <span class="label mono">Why it's interesting —</span> The
+                fractal renderer is a from-scratch reimplementation of a
+                textbook algorithm, not an asset-store plugin — happy to
+                walk through the recursion in an interview.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/NabintouSFofana/TerraScapeTeam"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >View on GitHub&nbsp;↗</a
+              >
+            </div>
+          </div>
+          <figure class="project-photo">
+            <div class="photo-frame">
+              <picture>
+                <source srcset="images/terrascape.webp" type="image/webp" />
+                <img
+                  src="images/terrascape.png"
+                  alt="TerraScape — Unity/C# procedural terrain sandbox with L-system fractal generation"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 12 — Event Planning & Vendor Marketplace (Project Management) -->
+        <article class="project" id="p12" data-reveal>
+          <span class="project-bignum" aria-hidden="true">12</span>
+          <div class="project-text-col">
+            <div class="project-meta">
+              <span class="mono">Project 12</span>
+              <span class="mono">·</span>
+              <span class="mono">2026</span>
+              <span class="featured-badge pm-badge mono">
+                <span class="featured-dot" aria-hidden="true"></span>
+                Team of 4 · project management
+              </span>
+            </div>
+            <h3 class="project-title">
+              Event Planning &amp; Vendor Marketplace Platform
+              <span class="leaf" aria-hidden="true">📋</span>
+            </h3>
+            <p class="project-subtitle">
+              A complete project management plan for a two-sided web app
+              connecting event customers with vendors — search, compare,
+              and book in one place.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>Project Planning</li>
+              <li>Scope Definition</li>
+              <li>Scheduling · CPM</li>
+              <li>Risk Management</li>
+              <li>Cost Estimation</li>
+              <li>Stakeholder Analysis</li>
+            </ul>
+            <div class="project-body">
+              <p>
+                <span class="label mono">Built —</span> As part of a
+                4-person team, I led and authored the planning
+                deliverables for a proposed event-vendor marketplace: a
+                Work Breakdown Structure covering roughly 70 tasks, a
+                Critical Path Method schedule spanning about 232 working
+                days, a risk register of 12 identified risks with response
+                plans, and ongoing project-health tracking with Earned
+                Value Management (SPI/CPI, forecasting). This is the final
+                version I continued to refine and develop throughout the course.
+              </p>
+              <p>
+                <span class="label mono">Learned —</span> This is a
+                planning deliverable, not shipped code — the value is in
+                scope definition, scheduling, and risk analysis, the same
+                skills that keep a real engineering project on track once
+                the code starts. This project demonstrates my ability to manage
+                complex projects, coordinate teams, and think strategically
+                about software delivery.
+              </p>
+            </div>
+          </div>
+          <div class="project-links">
+              <a
+                href="projects/SE4381_Team3_Final_Presentation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+                >View Final Presentation&nbsp;↓</a
+              >
+            </div>
+          <figure class="project-photo">
+            <div class="photo-frame">
+              <picture>
+                <source srcset="images/event-planning.webp" type="image/webp" />
+                <img
+                  src="images/event-planning.png"
+                  alt="Event Planning & Vendor Marketplace — project planning deliverables and WBS"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="photo-tape" aria-hidden="true"></span>
+            </div>
+          </figure>
+        </article>
       </section>
 
       <!-- ─────────── OUTRO / CTA ─────────── -->
@@ -1117,7 +1305,7 @@ aria-hidden="true">
       <div class="footer-row">
         <span class="mono">© 2026 — Nabintou S. Fofana</span>
         <span class="mono"
-          >Designed &amp; built by hand · <a href="#top">Back to top ↑</a></span
+          >Designed &amp; built · <a href="#top">Back to top ↑</a></span
         >
       </div>
       <div class="signature" aria-hidden="true">N · S · F</div>
