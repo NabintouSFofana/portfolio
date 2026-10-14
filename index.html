@@ -46,7 +46,7 @@
 
     <div class="now-widget" role="status" aria-live="polite" id="nowWidget">
       <span class="now-dot" aria-hidden="true"></span>
-      <span class="now-text" id="nowText">Actively hiring. Let's talk</span>
+      <span class="now-text" id="nowText">Open to work. Let's talk</span>
       <span class="now-time" id="nowTime"></span>
     </div>
 
@@ -152,7 +152,7 @@
         </article>
         <article class="card" data-reveal>
           <span class="card-label mono">Strong in</span>
-          <p>Full-stack web development, database design, backend systems. Vanilla JavaScript and Python. I ship clean code and care about getting it right, not just getting it done.</p>
+          <p>Full-stack web development, database design, backend systems. Java, SQL, vanilla JavaScript and Python. I ship clean code and care about getting it right, not just getting it done.</p>
         </article>
         <article class="card" data-reveal>
           <span class="card-label mono">Based in</span>
@@ -191,12 +191,12 @@
           </a>
         </li>
         <li class="work-item" data-reveal>
-          <a href="projects.html#p03">
+          <a href="projects.html#p06">
             <span class="work-num mono">03</span>
-            <span class="work-name">Journal de Nabie</span>
-            <span class="work-tag mono">Mini CMS · Admin · FR</span>
-            <span class="work-year mono">2025</span>
-            <span class="work-peek" aria-hidden="true"><picture><source srcset="images/mon-journal.webp" type="image/webp" /><img src="images/mon-journal.png" alt="" loading="lazy" /></picture></span>
+            <span class="work-name">InsightFlow</span>
+            <span class="work-tag mono">Python · Flask · Data tooling</span>
+            <span class="work-year mono">2026</span>
+            <span class="work-peek" aria-hidden="true"><picture><source srcset="images/InsightFlow.webp" type="image/webp" /><img src="images/InsightFlow.png" alt="" loading="lazy" /></picture></span>
             <span class="work-arrow" aria-hidden="true">→</span>
           </a>
         </li>
@@ -218,6 +218,7 @@
             <span class="ai-tag">JavaScript</span>
             <span class="ai-tag">Python</span>
             <span class="ai-tag">Java</span>
+            <span class="ai-tag">SQL</span>
             <span class="ai-tag">HTML</span>
             <span class="ai-tag">CSS</span>
             <span class="ai-tag">C#</span>
@@ -227,6 +228,7 @@
           <span class="card-label mono">Frameworks &amp; Libraries</span>
           <div class="skill-tags">
             <span class="ai-tag">Spring Boot</span>
+            <span class="ai-tag">JUnit</span>
             <span class="ai-tag">Flask</span>
             <span class="ai-tag">Pandas</span>
             <span class="ai-tag">Java Swing · FlatLaf</span>
@@ -236,7 +238,7 @@
           <span class="card-label mono">Tools &amp; Platforms</span>
           <div class="skill-tags">
             <span class="ai-tag">Git &amp; GitHub</span>
-            <span class="ai-tag">Supabase</span>
+            <span class="ai-tag">Supabase · PostgreSQL</span>
             <span class="ai-tag">Anthropic Claude API</span>
             <span class="ai-tag">Google Apps Script</span>
             <span class="ai-tag">Render</span>
@@ -589,10 +591,10 @@
       // 22-08: asleep
       const isAround = ctHour >= 8 && ctHour < 22;
       if (isAround) {
-        text.textContent = 'Actively hiring. Usually around';
+        text.textContent = 'Open to work. Usually around';
         if (dot) dot.classList.remove('is-quiet');
       } else {
-        text.textContent = 'Actively hiring. Back tomorrow';
+        text.textContent = 'Open to work. Back tomorrow';
         if (dot) dot.classList.add('is-quiet');
       }
     }
