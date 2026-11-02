@@ -17,11 +17,11 @@ I am a Software Engineering student at The University of Texas at Dallas, with f
 
 | Project | Focus | My role |
 | --- | --- | --- |
-| [Schicgirl](projects.html#p01) | Bilingual web platform with memberships and booking tools | Freelance development and maintenance, PostgreSQL access control, session recovery, and consistent French/English data. |
-| [NABIELA notes](projects.html#nabiela) | Private study notebook with editable diagrams and local storage | Product direction, AI-assisted implementation, behavior review, and interface refinement. |
-| [Math Adventure](projects.html#p02) | Math practice application built with Java and Spring Boot | Team project followed by a solo refactor of services, API responses, and frontend modules. |
-| [InsightFlow](projects.html#p06) | CSV cleaning and analysis using Python and Flask | Web application, shared analysis modules, and a companion command-line tool for PDF reports. |
-| [TerraScape](projects.html#p11) | Procedural graphics in Unity | Object placement and manipulation, L-system geometry, and team repository documentation. |
+| [Schicgirl](https://nabintousfofana.github.io/portfolio/projects.html#p01) | Bilingual web platform with memberships and booking tools | Freelance development and maintenance, PostgreSQL access control, session recovery, and consistent French/English data. |
+| [NABIELA notes](https://nabintousfofana.github.io/portfolio/projects.html#nabiela) | Private study notebook with editable diagrams and local storage | Product direction, AI-assisted implementation, behavior review, and interface refinement. |
+| [Math Adventure](https://nabintousfofana.github.io/portfolio/projects.html#p02) | Math practice application built with Java and Spring Boot | Team project followed by a solo refactor of services, API responses, and frontend modules. |
+| [InsightFlow](https://nabintousfofana.github.io/portfolio/projects.html#p06) | CSV cleaning and analysis using Python and Flask | Web application, shared analysis modules, and a companion command-line tool for PDF reports. |
+| [TerraScape](https://nabintousfofana.github.io/portfolio/projects.html#p11) | Procedural graphics in Unity | Object placement and manipulation, L-system geometry, and team repository documentation. |
 
 The technologies used by these projects are separate from the portfolio website itself. This repository contains the website and its case studies; the case studies link to project repositories where available.
 
