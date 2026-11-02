@@ -1,11 +1,102 @@
-# Nabintou S. Fofana portfolio
+# Nabintou S. Fofana — Portfolio
 
-This folder is the complete buildless portfolio. Copy its CONTENTS into the root of your portfolio repository, then commit and push using your usual Git workflow. There is no install or build command. Keep index.html, projects.html, resume.html, archive.html, all stylesheets, site.js, images/, and projects/ together.
+My personal software engineering portfolio, built with HTML, CSS, and JavaScript. It presents selected projects, my contributions and engineering decisions, earlier coursework, and a résumé available in PDF and Word formats.
 
-The revised resume is available as a readable web page (resume.html), a one-page PDF, and an editable Word document. Both download files are linked from resume.html. Edit the resume text and both document formats together to keep them consistent.
+I am a Software Engineering student at The University of Texas at Dallas, with freelance experience maintaining a bilingual web platform. My project work spans web applications, Java backend systems, Python data tools, and a private study application.
 
-For GitHub Pages, publish the main branch and repository root under Settings > Pages, or retain your existing Pages workflow. All page and asset paths work beneath a repository path such as /portfolio/.
+## Website features
 
-NABIELA notes is a private product in development. This portfolio includes only its project overview and icon. Its application HTML, source code, installers, binaries, and a working demo are excluded. Do not add the separate NABIELA app folder to this repository.
+- Responsive layouts for desktop and mobile.
+- Selected case studies describing the problem, my role, key decisions, and current status.
+- A separate archive for earlier projects and coursework.
+- A readable résumé page with PDF and Word downloads.
+- Light and dark themes, with a saved preference on the main pages.
+- Keyboard navigation support, skip links, and descriptive image text.
 
-The included LICENSE applies to portfolio code. Personal written content, photographs, and brand identity remain reserved to Nabintou S. Fofana; it does not license the private NABIELA application.
+## Selected projects
+
+| Project | Focus | My role |
+| --- | --- | --- |
+| [Schicgirl](dist/projects.html#p01) | Bilingual web platform with memberships and booking tools | Freelance development and maintenance, PostgreSQL access control, session recovery, and consistent French/English data. |
+| [NABIELA notes](dist/projects.html#nabiela) | Private study notebook with editable diagrams and local storage | Product direction, AI-assisted implementation, behavior review, and interface refinement. |
+| [Math Adventure](dist/projects.html#p02) | Math practice application built with Java and Spring Boot | Team project followed by a solo refactor of services, API responses, and frontend modules. |
+| [InsightFlow](dist/projects.html#p06) | CSV cleaning and analysis using Python and Flask | Web application, shared analysis modules, and a companion command-line tool for PDF reports. |
+| [TerraScape](dist/projects.html#p11) | Procedural graphics in Unity | Object placement and manipulation, L-system geometry, and team repository documentation. |
+
+The technologies used by these projects are separate from the portfolio website itself. This repository contains the website and its case studies; the case studies link to project repositories where available.
+
+## Run locally
+
+The website is static. No npm installation or frontend build is required.
+
+From the repository root, use Python 3 to serve the published files:
+
+```bash
+python -m http.server 8000 --directory dist
+```
+
+Open [http://localhost:8000](http://localhost:8000) in your browser. On systems where Python 3 is named `python3`, use `python3` instead of `python`.
+
+## Repository structure
+
+| Path | Purpose |
+| --- | --- |
+| [`dist/`](dist/) | Website files ready for static hosting. |
+| [`dist/index.html`](dist/index.html) | Introduction, featured work, about, and contact. |
+| [`dist/projects.html`](dist/projects.html) | Five selected project case studies. |
+| [`dist/archive.html`](dist/archive.html) | Earlier projects and coursework. |
+| [`dist/resume.html`](dist/resume.html) | Browser résumé and download links. |
+| [`dist/refined.css`](dist/refined.css), [`dist/resume.css`](dist/resume.css) | Styles for the main pages and résumé. |
+| [`dist/styles.css`](dist/styles.css), [`dist/archive-refinements.css`](dist/archive-refinements.css) | Archive styling. |
+| [`dist/site.js`](dist/site.js) | Theme controls for the main pages. |
+| [`dist/images/`](dist/images/) | Project images, portrait, and icons. |
+| [`content/resume.json`](content/resume.json) | Structured source for résumé content. |
+| [`scripts/`](scripts/) | Résumé generation and site verification tools. |
+
+## Update the portfolio
+
+Edit `dist/index.html` for the introduction, featured projects, and contact information. Edit `dist/projects.html` for case studies and `dist/archive.html` for earlier work. Place new website images in `dist/images/` and use relative paths when linking them.
+
+Keep project descriptions clear about individual contributions, team ownership, AI assistance, and the current status of each project.
+
+### Update the résumé
+
+The maintenance scripts use Python 3. Word generation requires `python-docx`; site verification requires `PyMuPDF`.
+
+1. Update `content/resume.json`.
+2. Regenerate the Word file and browser page from the repository root:
+
+   ```bash
+   python scripts/build_resume.py
+   python scripts/build_resume_page.py
+   ```
+
+3. Export the regenerated Word document to PDF as `dist/Nabintou_Fofana_resume.pdf`. The scripts do not perform this conversion automatically.
+4. Review the Word, PDF, and browser versions for matching content, readable spacing, and clipped text.
+5. Run the existing checks:
+
+   ```bash
+   python scripts/verify_site.py
+   ```
+
+The verification script checks local links and anchors, résumé content, PDF page count and text bounds, and the exclusion of private application files. It does not replace a visual review or test external websites.
+
+Word formatting is defined in `scripts/build_resume.py`, and the browser résumé is generated by `scripts/build_resume_page.py`. Manual edits to the generated files can be overwritten the next time these scripts run.
+
+## Deployment
+
+Publish the **contents of `dist/`** as the website root using a static hosting service. The published root must contain `index.html`; the repository root also contains maintenance files and is not the website entry point.
+
+After deployment, check page navigation, images, theme controls, and both résumé downloads.
+
+## NABIELA notes
+
+NABIELA notes is a private product in development for a future commercial release. Its portfolio entry is a case study only.
+
+The application source, working app HTML, installers, executable files, backups, and app downloads are not distributed through this portfolio. Keep those files outside `dist/` and outside any public portfolio repository.
+
+## Contact
+
+- Email: [nabintousfofana@gmail.com](mailto:nabintousfofana@gmail.com)
+- GitHub: [NabintouSFofana](https://github.com/NabintouSFofana)
+- LinkedIn: [nabintousfofana](https://www.linkedin.com/in/nabintousfofana)
