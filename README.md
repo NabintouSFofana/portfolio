@@ -1,4 +1,4 @@
-# Nabintou S. Fofana — Portfolio
+# Nabintou S. Fofana - Portfolio
 
 My personal software engineering portfolio, built with HTML, CSS, and JavaScript. It presents selected projects, my contributions and engineering decisions, earlier coursework, and a résumé available in PDF and Word formats.
 
